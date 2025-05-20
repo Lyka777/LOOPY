@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding-bottom: 90px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff0000; 
+}
+header .logo img {
+    max-width: 50px;
+    border-radius: 20px;
+}
+nav {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+.nav-right a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-right a:hover {
+    color: yellow;
+}
+.container {
+  background: linear-gradient(to bottom right, red, #f53a3a);
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.signup-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.image-box img {
+  max-width: 800px;
+  height: auto;
+}
+
+/*ari ra */
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0px;
+}
+input {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  color: gray;
+  display: inline;
+}
+input:focus {
+    border-color: yellow;
+    outline: none;
+}
+.dob {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+label {
+  display: block;
+  text-align: left;
+  margin: 5px 0 10px 10%;
+  font-size: 14px;
+}
+.gender {
+  display: flex;
+  justify-content: flex;
+  margin: 10px 0;
+  font-size: 12px;
+  color: white;
+}
+.terms {
+  font-size: 12px;
+  margin-top: 10px;
+  color: white;
+}
+.signup-btn {
+  width: 80%;
+  padding: 12px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.signup-btn:hover {
+background-color: gray;
+}
+.about-section {
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1000;
+    height: 40px;
+}

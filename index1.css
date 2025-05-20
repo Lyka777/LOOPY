@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  background: white;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+.feed-area {
+  margin-left: 220px;
+  margin-right: 220px;
+  padding: 30px;
+  flex: 1;
+}
+.stories-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.stories {
+  display: flex;
+  gap: 20px;
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+  flex-shrink: 0;
+}
+.story img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid red;
+  margin-bottom: 5px;
+}
+.story p {
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.post {
+  gap: 50px;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  width: 85%;
+  height: 85%;
+  background: red;
+}
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 3px;
+  color: white;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.post-img {
+  width: 98%;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.post-actions {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  padding: 5px 0;
+}
+.post-likes {
+  font-size: 14px;
+  margin: 5px 0;
+  color: white;
+}
+.post-caption {
+  font-size: 14px;
+  color: white;
+}
+.time {
+  font-size: 12px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .sidebar, .suggestions {
+    display: none;
+  }
+  .feed-area {
+    margin: 0;
+    padding: 10px;
+  }
+  .story {
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+  }
+  .post {
+    max-width: 100%;
+  }
+}
+.logout {
+  border: none;
+  border-radius: 30px;
+  background-color: yellow;
+  width: 50%;
+  height: 30px;
+  transition: color 0.3s;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  padding: 5px;
+  list-style: none;
+  text-align: center;
+  color: white;
+}
+.a {
+  color: white;
+}
+
+.suggestions {
+  width: 200px;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.suggestions h4 {
+  margin-top: 20px;
+}
+
+.suggestions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.suggestions li {
+  margin: 10px 0;
+}

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding-bottom: 90px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff0000; 
+}
+
+header .logo img {
+    max-width: 50px;
+    border-radius: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.nav-right a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-right a:hover {
+    color: yellow;
+}
+.about-section {
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+    
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+    
+.about-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+.info-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+    
+.box {
+    background: linear-gradient(to bottom right, red, #f34b4b);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    transition: transform 0.2s ease-in-out;
+}
+    
+.box:hover {
+    transform: translateY(-5px);
+}
+    
+.box h1 {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+    
+.box p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+.about-section {
+padding: 3rem 2rem;
+max-width: 1100px;
+margin: 0 auto;
+text-align: center;
+}
+
+.about-section h1 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.about-section p {
+font-size: 1.1rem;
+margin-bottom: 2.5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1000;
+    height: 40px;
+}
